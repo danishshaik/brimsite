@@ -1,0 +1,434 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+a img {
+    border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    margin: 0;
+    min-height: 100%}
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: "Avenir",  "Helvetica Neue",  helvetica,  sans-serif;
+    font-size: 16px;
+    color: #fff;
+    /*background-color: #fa405e;*/
+    background: -webkit-linear-gradient(left, #34b0d5, #23dd73); /* For Safari 5.1 to 6.0 */
+    color: -o-linear-gradient(right, #34b0d5, #23dd73); /* For Opera 11.1 to 12.0 */
+    color: -moz-linear-gradient(right, #34b0d5, #23dd73); /* For Firefox 3.6 to 15 */
+    color: linear-gradient(right, #34b0d5, #23dd73); /* Standard syntax (must be last) */
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+body.waiting * {
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+}
+img {
+    border: none;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%}
+strong {
+    font-weight: 700;
+}
+p {
+    line-height: 1.5em;
+}
+h4 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+hr {
+    margin: 0;
+    height: 1px;
+    border: none;
+    background-color: white;
+}
+.btn {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    text-align: center;
+    padding: 16px 20px 16px 16px;
+    font-weight: 500;
+    font-size: 17.5px;
+    line-height: 1.2em;
+    font-weight: bold;
+    color: #4e86f9;
+    border: 2px solid #4e86f9;
+    border-color: rgba(78, 134, 249, 0.3);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.btn:hover {
+    color: #4e86f9;
+}
+.btn:active {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+    opacity: 0.65;
+}
+.btn small {
+    display: block;
+    font-size: 14px;
+}
+.btn em, .btn span {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+}
+.btn span {
+    margin-top: 2px;
+}
+.btn em {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: transparent url(../images/sprite.png) no-repeat -473px -58px;
+}
+.btn.red {
+    background: -webkit-linear-gradient(, #333);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+    border-color: rgba(250, 64, 94, 0.3);
+}
+.btn.red em {
+    background-position: -560px -58px;
+}
+.inner-wrap {
+    margin: 0 auto;
+    max-width: 860px;
+}
+body>header {
+    background: transparent url(../images/bg.png) repeat-x left top;
+}
+body>header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    background: -webkit-linear-gradient(#34b0d5, #23dd73);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+body>header h2 {
+    margin: 42px auto;
+    font-size: 20px;
+    color: #5a6c85;
+    line-height: 1.5em;
+}
+body>header .devices {
+    padding-top: 140px;
+    color: white;
+}
+body>header .devices span {
+    display: block;
+    width: 105px;
+    height: 35px;
+    margin: 0 auto 15px auto;
+    background: transparent url(../images/sprite.png) no-repeat right top;
+}
+body>header .middle {
+    width: 20%;
+    min-width: 250px;
+    padding-top: 136px;
+    margin: 0 auto;
+    text-align: center;
+}
+body>header .left, body>header .right {
+    position: absolute;
+    width: 35%;
+    padding-top: 40px;
+    height: 738px;
+    overflow: hidden;
+    text-align: right;
+    left: 0;
+    top: 0;
+}
+body>header .left .image, body>header .right .image {
+    float: right;
+    width: 405px;
+    height: 698px;
+    background: transparent url(../images/phones-left.png) no-repeat right top;
+}
+body>header .right {
+    right: 0;
+    top: 0;
+    left: inherit;
+}
+body>header .right .image {
+    float: none;
+    width: 600px;
+    margin-left: 50px;
+    background: transparent url(../images/phones-right.png) no-repeat left top;
+}
+#desc {
+    text-align: center;
+    margin-top: 100px;
+}
+#desc h4 {
+    font-weight: normal;
+}
+#desc h4.dark {
+    color: white;
+    margin-bottom: 40px;
+}
+#desc h4.bottom {
+    padding: 60px 20px 40px 20px;
+    line-height: 1.3em;
+}
+#desc h4.bottom span {
+    white-space: nowrap;
+}
+#desc .circles {
+    width: 287px;
+    height: 69px;
+    margin: 0 auto 55px auto;
+    background: transparent url(../images/sprite.png) no-repeat left top;
+}
+#points {
+    padding: 90px 0 60px 0;
+    background-color: #1e2227;
+    background: -webkit-linear-gradient(140deg,  #1e2227, #1c2b4d);
+    background: -moz-linear-gradient(140deg,  #1e2227, #1c2b4d);
+    background: -o-linear-gradient(140deg,  #1e2227, #1c2b4d);
+    background: linear-gradient(140deg,  #1e2227, #1c2b4d);
+    overflow: auto;
+}
+#points .right {
+    float: right;
+}
+#points .right .inner {
+    float: left;
+}
+#points .left {
+    float: left;
+    clear: both;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+#points .left .inner {
+    float: right;
+}
+#points .left, #points .right {
+    width: 50%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#points .left .inner, #points .right .inner {
+    max-width: 460px;
+    padding: 60px;
+}
+#points .top {
+    padding-bottom: 60px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+#points .top .inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#points .top .inner p {
+    padding: 0 20px;
+}
+#points .top .image {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    width: 380px;
+    height: 158px;
+    margin: 10px auto 20px auto;
+    background: transparent url(../images/sprite.png) no-repeat right -130px;
+}
+#points .top h4 {
+    font-size: 32px;
+    font-weight: normal;
+}
+#points .bottom {
+    padding-top: 60px;
+    clear: both;
+    text-align: center;
+}
+#points h5 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+body>footer {
+    text-align: center;
+}
+body>footer p {
+    padding: 60px;
+    line-height: 1.7em;
+}
+body>footer p span {
+    white-space: nowrap;
+}
+body>footer a {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+body>footer a:hover {
+    border-bottom-color: rgba(255, 255, 255, 0);
+}
+body>footer .image {
+    width: 154px;
+    height: 154px;
+    margin: 40px auto;
+    background: transparent url(../images/sprite.png) no-repeat left bottom;
+}
+@media only screen and (max-width: 730px) {
+    body>header .left, body>header .right {
+    width: 25%}
+}@media only screen and (max-width: 600px) {
+    body>header {
+    background-position: left -70px;
+}
+body>header .left {
+    display: none;
+}
+body>header .right {
+    display: block;
+    position: relative;
+    padding-top: 0;
+    margin-top: 40px;
+    width: 100%;
+    height: 260px;
+    text-align: center;
+    background: transparent url(../images/phones-left.png) no-repeat 12% 8px;
+    -webkit-background-size: 148px auto;
+    -moz-background-size: 148px auto;
+    -o-background-size: 148px auto;
+    background-size: 148px auto;
+}
+body>header .right .image {
+    float: none;
+    height: 270px;
+    width: 100%;
+    margin: 0 auto;
+    background-position: 90% top;
+    -webkit-background-size: 230px auto;
+    -moz-background-size: 230px auto;
+    -o-background-size: 230px auto;
+    background-size: 230px auto;
+}
+body>header .middle {
+    padding-top: 60px;
+}
+h4 {
+    font-size: 20px;
+}
+#desc {
+    margin-top: 30px;
+}
+#points {
+    padding: 60px 0 60px 0;
+}
+#points .right, #points .left {
+    width: auto;
+    text-align: center;
+    float: none;
+}
+#points .right .inner, #points .left .inner {
+    float: none;
+    max-width: inherit;
+    padding: 60px 30px;
+}
+#points .top h4 {
+    font-size: 26px;
+}
+#points .top .image {
+    width: 320px;
+    background-position: -195px -110px;
+    -webkit-background-size: 160% auto;
+    -moz-background-size: 160% auto;
+    -o-background-size: 160% auto;
+    background-size: 160% auto;
+}
+#points .top .inner p {
+    padding: 0 30px;
+}
+}@media only screen and (max-width: 480px) {
+    body>header .right {
+    background-position: left 8px;
+}
+body>header .right .image {
+    background-position: 120% top;
+}
+}@media only screen and (max-width: 370px) {
+    body>header .right .image {
+    background-position: 170% top;
+}
+}@media only screen and (-webkit-min-device-pixel-ratio: 1.5),  only screen and (min-device-pixel-ratio: 1.5) {
+    body>header .devices span, .btn em, #desc .circles, #points .top .image, body>footer .image {
+    background-image: url(../images/sprite@2x.png);
+    background-size: 600px 300px;
+}
+}@media only screen and (-webkit-min-device-pixel-ratio: 1.5),  only screen and (min-device-pixel-ratio: 1.5),  only screen and (max-width: 600px) {
+    #points .top .image {
+    -webkit-background-size: 160% auto;
+    -moz-background-size: 160% auto;
+    -o-background-size: 160% auto;
+    background-size: 160% auto;
+}
+}
